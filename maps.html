@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>SoulHack TNT</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="icones/vetorreciclagemblack.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/5511(#)?text=Quero%20mais%20informações!" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+      z-index:1000;" target="_blank">
+        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    </a>
+</head>
+
+<body class=" bg-container">
+    <div class="background-custom">
+        <!-- Menu -->
+        <header class="container-fluid">
+
+            <!-- Menu -->
+            <nav class="navbar navbar-expand-md navbar-light navbar-custom">
+                <div>
+                    <img src="icones/logofundoCinza.png" style="height: 100px;" alt="Logotipo escrito Recicla-TI">
+                </div>
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="@mdo">Recicla-TI</button>
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
+                        aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="conteudoNavbarSuportado">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a class="nav-link color btn btn-dark" style="color: #FFF;" href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="nav-link color btn btn-dark" style="color: #FFF;" href="quemSomos.html">Quem
+                                    Somos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn btn-dark" style="color: #FFF;" href="#"
+                                    id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Conteúdo
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="boaspraticasASG.html">Boas Práticas de Reciclagem</a>
+                                    <a class="dropdown-item" href="maps.html">Pontos de Coleta</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+
+        </section>
+    </div>
+
+    <main>
+        <!-- Newsletter -->
+        <section class="modal fade" id="myModal">
+            <div class="modal-dialog modal-lg modal-newsletter">
+                <div class="modal-content">
+                    <form action="confirmation" method="post">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <span>&#10006;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <h4>Assine a nossa Newsletter</h4>
+                            <p>Tenha sempre uma novidade do nosso mundão das fazendas e diversas opcões de sobre
+                                leilões, produtos, técnicas...</p>
+                            <input type="email" class="form-control" placeholder="Entre com seu email" required>
+                            <span class="input-input-btn">
+                                <input type="submit" class="botao-newsletter btn btn-primary" value="Subscribe">
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <p class="hint-text"><strong>Note:</strong> Atualize a página ou execute o código para recarregar o modal
+            </p>
+        </section>
+
+        <section>
+            <div class="container" id="artigos">
+                <div class="col-md-12">
+                    <h1>PONTOS DE COLETA</h1>
+                    <p>Olá Seja Bem Vindo(a)!</p>
+                    <p>Encontre abaixo os pontos de coleta parceiros mais próximos de você!</p>
+
+                </div>
+
+
+
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body bg-custom">
+
+                            <div class="text-justify">
+                                <!-- <p id="demo">Clique no botão para obter sua localização:</p>
+                                <button onclick="getLocation()">Clique aqui</button> -->
+                                <div id="mapholder"></div>
+                                <script
+                                    src="https://maps.google.com/maps/api/js?key=AIzaSyCq8xfzQoZMBHuxhqm4CBy0MCL4OfJsDyU"></script>
+                                <script>
+                                    var x = document.getElementById("demo");
+                                    function getLocation() {
+                                        if (!navigator.geolocation)
+                                            return null;
+                                        navigator.geolocation.getCurrentPosition(showPosition, showError);
+
+                                        // else{x.innerHTML="Geolocalização não é suportada nesse browser.";}
+                                    }
+
+                                    function showPosition(position) {
+                                        lat = position.coords.latitude;
+                                        lon = position.coords.longitude;
+                                        latlon = new google.maps.LatLng(lat, lon)
+                                        mapholder = document.getElementById("mapholder")
+                                        mapholder.style.height = '350px';
+                                        mapholder.style.width = '100%';
+
+                                        var myOptions = {
+                                            center: latlon, zoom: 14,
+                                            mapTypeId: google.maps.MapTypeId.ROADMAP,
+                                            mapTypeControl: true,
+                                            navigationControlOptions: { style: google.maps.NavigationControlStyle.SMALL }
+                                        };
+                                        var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+                                        var marker = new google.maps.Marker({ position: latlon, map: map, title: "Você está Aqui!" }); console.log(position)
+                                    }
+
+                                    function showError(error) {
+                                        switch (error.code) {
+                                            case error.PERMISSION_DENIED:
+                                                x.innerHTML = "Usuário rejeitou a solicitação de Geolocalização."
+                                                break;
+                                            case error.POSITION_UNAVAILABLE:
+                                                x.innerHTML = "Localização indisponível."
+                                                break;
+                                            case error.TIMEOUT:
+                                                x.innerHTML = "O tempo da requisição expirou."
+                                                break;
+                                            case error.UNKNOWN_ERROR:
+                                                x.innerHTML = "Algum erro desconhecido aconteceu."
+                                                break;
+                                        }
+                                    }
+                                    getLocation()
+                                </script>
+
+
+
+
+
+                                <div class="collapse" id="collapseAgro4" data-parent="#artigos">
+                                    <div class="container">
+                                        <div class="col-md-12">
+                                            <h2>O agronegócio no Ceará. Por Eliardo Vieira e Joyce de Castro</h2>
+                                            <p>Alimentar a população mundial de forma sustentável é um desafio,
+                                                especialmente para países como o Brasil, com vocação natural
+                                                para o agronegócio. Atualmente, somos quase 8 bilhões de habitantes no
+                                                planeta e, em 2050, a expectativa é de atingirmos ao
+                                                redor de 10 bilhões.</p>
+                                            <p>A combinação de crescimento populacional, urbanização e aumento do poder
+                                                aquisitivo provocará o crescimento exponencial na demanda
+                                                por alimentos. Mas não basta suprir a demanda, é indispensável unir
+                                                aumento de produtividade com conservação ambiental para garantir
+                                                a segurança alimentar.</p>
+                                            <p>Com recursos naturais limitados, o aumento da demanda deverá ser
+                                                suportado pelo aumento de produtividade, por novas tecnologias de
+                                                cultivo sustentável e por inovações.</p>
+
+                                            <a href="https://www.focus.jor.br/o-agronegocio-no-ceara-por-eliardo-vieira-e-joyce-de-castro/"
+                                                target="_blank">Fonte</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+        </section>
+    </main>
+
+    <!-- Lupa -->
+    <div class="menu-final">
+        <div class="fixed-action-btn" id="fixed1" style="height: 80px;">
+            <a class="  btn-floating btn-primary btn-lg " style="background-color: rgb(256, 256, 256, 0.00008);">
+                <i class="fas fa-pencil-alt"></i>
+                <div class="btn-group dropup">
+                    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="icones/lupa.png" style="height: 25px">
+                    </button>
+                    <div class="dropdown-menu ">
+                        <div style=" display:grid;
+                    padding-left:50px;
+                    flex-direction: row;
+                    justify-content: center;
+                    background-color:rgb(256, 256, 256, 0.00008);
+                    border: 0;
+                    align-items: flex-end;">
+                            <button class="btn btn-light " onclick="aumentar()">A +</button>
+                        </div>
+                        <div style=" display:grid;
+                    padding-left:50px;
+                    flex-direction: row;
+                    justify-content: center;
+                    background-color:rgb(256, 256, 256, 0.00008);
+                    border: 0;
+                    align-items: flex-end;">
+                            <button class="btn btn-light " onclick="diminuir()">A -</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <p id="logou"></p>
+
+        <script>
+            tamanho = 14;
+            function diminuir() {
+                tamanho -= 3;
+                document.body.style.fontSize = tamanho + "px";
+            }
+            function aumentar() {
+                tamanho += 3;
+                document.body.style.fontSize = tamanho + "px";
+            }
+        </script>
+    </div>
+
+    <footer>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </footer>
+
+    <!-- Footer -->
+    <div class="row cor4 align-items-center">
+
+        <div class="col-lg-12 col-md-12 col-sm-12">
+
+            <div class="col-4">
+                <a href="https://www.bomdebeer.com.br/" target="_blank"><img src="icones/bomdebeer.png" alt=""></a>
+            </div>
+            <div class="col-5" style="color: white;">
+                <i class="fa fa-copyright" aria-hidden="true">
+                    <strong>Termos | Privacidade | Sobre | Configurações</strong> <br>
+                    <strong>Todos os direitos Reservados&copy; | 2021</strong><br>
+                    <strong>@Site desenvolvido por MaxDev's no SoulHack TNT Web | Mobile &copy;</strong></i>
+            </div>
+            <div class="col-3">
+                <p>
+                    <a href="https://www.facebook.com/grupo.petropolis" target="_blank"><img src="icones/facebook.png"
+                            alt=""></a>
+                    <a href="https://www.instagram.com/grupo.petropolis/?hl=pt-br" target="_blank"><img
+                            src="icones/instagram.png" alt=""></a>
+                    <a href="https://br.linkedin.com/company/grupo-petropolis" target="_blank"><img
+                            src="icones/linkedin.png" alt=""></a>
+                    <a href="https://soulcodeacademy.org/" target="_blank"><img src="icones/soulcode.jpg" alt=""></a>
+                    <a href="https://www.grupopetropolis.com.br/" target="_blank"><img src="icones/gp1.png" alt=""></a>|
+                    <a href="https://itlean.com.br/" target="_blank"><img src="icones/it-lean1.png" alt=""></a>
+                </p>
+            </div>
+            </p>
+        </div>
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

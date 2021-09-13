@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>SoulHack TNT</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="icones/vetorreciclagemblack.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/5511(#)?text=Quero%20mais%20informações!" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+      z-index:1000;" target="_blank">
+        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    </a>
+</head>
+
+<body class=" bg-container">
+    <div class="background-custom">
+        <!-- Menu -->
+        <header class="container-fluid">
+            <!-- Menu -->
+            <nav class="navbar navbar-expand-md navbar-light navbar-custom">
+                <div>
+                    <img src="icones/logofundoCinza.png" style="height: 100px;" alt="Logotipo escrito Recicla-TI">
+                </div>
+
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
+                        aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="conteudoNavbarSuportado">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a class="nav-link color btn btn-dark" style="color: #FFF;" href="quemSomos.html">Quem
+                                    Somos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn btn-dark" style="color: #FFF;" href="#"
+                                    id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Conteúdo
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="boaspraticasASG.html">Boas Práticas de Reciclagem</a>
+                                    <a class="dropdown-item" href="maps.html">Pontos de Coleta</a>
+                                </div>
+                            </li>
+                            <!-- Botão com modal  -->
+                            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal"
+                                data-whatever="@mdo">PROGRAMA DE RECOMPENSAS</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">VOCÊ NÃO PODE FICAR FORA
+                                                DESSA</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container box-1">
+                                                <h1>Cadastre-se no Programa de Recompensas "Recicla-TI!"</h1>
+                                                <h6>Registre seu interesse em fazer parte do Programa de Recompensas do
+                                                    Grupo Petropólis!</h6>
+                                                <form action="" class="was-validated" novalidate>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-12">
+                                                            <input class="form-control" type="text" id="nomeCampo"
+                                                                placeholder="Nome Completo" required>
+                                                            <div class="valid-feedback">Válido</div>
+                                                            <div class="invalid-feedback">Por favor, preencha este
+                                                                campo.</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="text" id="cpfCampo"
+                                                            placeholder="CPF" maxlength="11" required>
+                                                        <div class="valid-feedback">Válido</div>
+                                                        <div class="invalid-feedback">Por favor, preencha este campo.
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="text" id="emailCampo"
+                                                            placeholder="Email" required>
+                                                        <div class="valid-feedback">Válido</div>
+                                                        <div class="invalid-feedback">Por favor, preencha este campo.
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="text" id="mensagem"
+                                                            placeholder="Mensagem" required>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <p>Aceita os Termos do Programa?</p>
+                                                        <div class="form-check-inline">
+                                                            <input class="form-check-input-dark" type="radio"
+                                                                id="checkCampo" value="yes" name="checkOpcao">
+                                                            <label class="form-check-label" for="checkOpcao">Sim</label>
+                                                        </div>
+                                                        <div class="form-check-inline">
+                                                            <input class="form-check-input-dark" type="radio"
+                                                                id="checkCampo" value="no" name="checkOpcao">
+                                                            <label class="form-check-label" for="checkOpcao">Não</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="class">
+
+                                                    </div>
+
+                                                    <div class="form-group row">
+                                                        <button class="btn btn-dark" type="button"
+                                                            onclick="testaCPF()">Confirmar</button>
+                                                        <!-- Botão para acionar modal -->
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-toggle="modal" data-target="#ModalLongoExemplo">
+                                                            Termos e Condições
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="ModalLongoExemplo" tabindex="-1"
+                                                            role="dialog" aria-labelledby="TituloModalLongoExemplo"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title"
+                                                                            id="TituloModalLongoExemplo">Termos</h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal" aria-label="Fechar">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                       <p> Regulamento para o Programa de Benefícios
+                                                                        Recicla-TI!</p> 
+
+                                                                      <p> O programa Recicla-TI foi idealizado com o
+                                                                        objetivo principal de incentivar a comunidade ao
+                                                                        cuidado com meio ambiente através de consumo
+                                                                        inteligente e descarte adequado do lixo
+                                                                        produzido.</p>
+                                                                      <p>Como tudo que é bom, quando cuidamos da mãe
+                                                                        natureza somos beneficiados e pensando nisto,
+                                                                        nós do Recicla-TI em parceira com Amazon,
+                                                                        Submarino, Latam e Ifood, queremos que você
+                                                                        consumidor possa ter um cash back todas as vezes
+                                                                        que realizar o descarte adequado de lixo.
+                                                                        Como faço para participar do Programa de
+                                                                        Benefícios?</p>
+
+                                                                       <p>É muito fácil:</p>
+                                                                      <p> • Registre- se em nosso site. É de suma
+                                                                        importância que você realize está etapa, pois
+                                                                        somente será arrecadados pontos para o Casch
+                                                                        Back o usuário que estiver com cadastro
+                                                                        efetivado.</p>
+                                                                        <p> • Junte produtos recicláveis e leve em um ponto
+                                                                            de coleta, você poderá encontrar um ponto de
+                                                                            coleta próximo de você através do nosso site.</p>  
+
+                                                                       <p> Por que tenho que realizar o Cadastro?</p>
+
+                                                                       <p>O Cash Back será entregue em crédito na carteira
+                                                                        digital do Recicla-TI.</p> 
+
+                                                                        <p>O que poderia comprar com o meu Cash Back?</p>
+
+                                                                       <p>Todos os produtos vendidos pelos nossos
+                                                                        parceiros, exceto produtos vedados pelo Art. 10º
+                                                                        do Decreto 70951/72, que são: medicamentos,
+                                                                        armas e munições, explosivos, fogos de artifício
+                                                                        ou de estampido, bebidas alcoólicas com teor
+                                                                        alcoólico acima de 13º Gay Lussac, fumo e seus
+                                                                        derivados.</p> 
+
+                                                                       <p>Qual é a validade do meu Cash Back ?</p> 
+
+                                                                       <p>Seus pontos ficam salvos e podem ser acumulados
+                                                                        em nossa carteira digital em um período de 4
+                                                                        anos, após esse período sua carteira será
+                                                                        zerada.</p> 
+
+                                                                       <p>Posso transferir o Cupom para outra pessoa ou
+                                                                        empresa?</p> 
+
+                                                                       <p> O Cupom é intransferível e só poderá ser
+                                                                        utilizado pelo portador do CPF cadastrado em
+                                                                        nosso sistema de benefícios.</p>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Fechar</button>
+                                                                        <!-- <button type="button" class="btn btn-primary">Salvar mudanças</button> -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </form>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                            <!-- <button type="button" class="btn btn-primary">Enviar</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+
+        </section>
+    </div>
+    <main>
+        <!-- Newsletter -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Podemos melhorar? Dê sua sugestão de conteúdo,
+                            faça a diferença conosco.</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="nomeCampo" placeholder="Nome Completo"
+                                    required>
+                                <div class="valid-feedback">Válido</div>
+                                <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="emailCampo" placeholder="Email" required>
+                                <div class="valid-feedback">Válido</div>
+                                <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Mensagem:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Texto inicial -->
+        <div>
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                <h1><b><i>Bem-Vindo ao Recicla-TI!</i></b></h1>
+                <h2>Seja você a mudança para um planeta mais sustentável!</h2>
+            </div>
+        </div>
+        <!-- Caixa jumbo -->
+        <div class="caixa">
+            <div class="jumbotron row ">
+                <h1 class="display-4">Faça parte do nosso Programa de Recompensas!</h1>
+                <p class="lead">Conheça os nossos Parceiros de Recompensas! É simples e fácil trocar seus recicláveis
+                    por compras em um de nossos afiliados! Clique no botão "Pontos de Coleta"
+                    e descubra o local de troca, mais próximo de você!</p>
+                <hr class="my-4">
+                <h3>Descubra o ponto de coleta mais próximo da sua região</h3>
+                <a class="btn btn-primary btn-lg" href="maps.html" role="button">Pontos de Coleta</a>
+            </div>
+
+        </div>
+
+        <!-- Imagem -->
+        <div class="text-justify">
+            <img src="icones/logodahack.png" alt="Logotipo">
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </footer>
+
+    <!-- Footer -->
+    <div class="row cor4 align-items-center">
+
+        <div class="col-lg-12 col-md-12 col-sm-12">
+
+            <div class="col-4">
+                <a href="https://www.bomdebeer.com.br/" target="_blank"><img src="icones/bomdebeer.png" alt=""></a>
+            </div>
+            <div class="col-5" style="color: white;">
+                <i class="fa fa-copyright" aria-hidden="true">
+                    <strong>Termos | Privacidade | Sobre | Configurações</strong> <br>
+                    <strong>Todos os direitos Reservados&copy; | 2021</strong><br>
+                    <strong>@Site desenvolvido por MaxDev's no SoulHack TNT Web | Mobile &copy;</strong></i>
+            </div>
+            <div class="col-3">
+                <p>
+                    <a href="https://www.facebook.com/grupo.petropolis" target="_blank"><img src="icones/facebook.png"
+                            alt=""></a>
+                    <a href="https://www.instagram.com/grupo.petropolis/?hl=pt-br" target="_blank"><img
+                            src="icones/instagram.png" alt=""></a>
+                    <a href="https://br.linkedin.com/company/grupo-petropolis" target="_blank"><img
+                            src="icones/linkedin.png" alt=""></a>
+                    <a href="https://soulcodeacademy.org/" target="_blank"><img src="icones/soulcode.jpg" alt=""></a>
+                    <a href="https://www.grupopetropolis.com.br/" target="_blank"><img src="icones/gp1.png" alt=""></a>|
+                    <a href="https://itlean.com.br/" target="_blank"><img src="icones/it-lean1.png" alt=""></a>
+                </p>
+            </div>
+            </p>
+        </div>
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
